@@ -180,15 +180,17 @@ body{background:linear-gradient(180deg,#fff 0%,#f9fbff 100%)}.announcement{backg
   </div>
   <div class="contact-form">
    <div id="requestPanel">
-    <form id="contactForm" name="contacto-nexonsoft" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field" autocomplete="off"><input type="hidden" name="form-name" value="contacto-nexonsoft"><p class="hidden" aria-hidden="true"><label>NO COMPLETAR <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-     <div class="field"><label for="name">Nombre</label><input id="name" name="name" autocomplete="off" placeholder="Tu nombre" maxlength="150" required></div>
-     <div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="off" placeholder="tunombre@empresa.com" maxlength="254" required></div>
-     <div class="field"><label for="country">País desde donde realizas la solicitud</label><input id="country" name="country" autocomplete="off" placeholder="Ej.: España" maxlength="100" required></div>
-     <div class="field"><label for="phone">Teléfono</label><input id="phone" name="phone" type="tel" autocomplete="off" placeholder="Incluye el prefijo internacional si procede" maxlength="40" required></div>
-     <div class="field"><label for="interest">¿En qué podemos ayudarte?</label><select id="interest" name="interest" required><option>Quiero información general</option><option>Me interesa un programa</option><option>Quiero solicitar una demostración</option><option>Busco una solución a medida</option><option>Consulta sobre compra o instalación</option></select></div>
-     <div class="field"><label for="message">Cuéntanos un poco más</label><textarea id="message" name="message" maxlength="5000" placeholder="Describe brevemente lo que necesitas..." required></textarea></div>
+    <form id="contactForm" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSfqVCMkM9tOe3rP_2M3UeBx0p_SM9Vqlycz5J2pjG8U8bdlFA/formResponse" target="googleFormTarget" autocomplete="off">
+     <div class="field"><label for="name">Nombre</label><input id="name" name="entry.202947366" autocomplete="off" placeholder="Tu nombre" maxlength="150" required></div>
+     <div class="field"><label for="email">Correo electrónico</label><input id="email" name="entry.392524019" type="email" autocomplete="off" placeholder="tunombre@empresa.com" maxlength="254" required></div>
+     <div class="field"><label for="country">País desde donde realizas la solicitud</label><input id="country" name="entry.2123680823" autocomplete="off" placeholder="Ej.: España" maxlength="100" required></div>
+     <div class="field"><label for="phone">Teléfono</label><input id="phone" name="entry.1419572338" type="tel" autocomplete="off" placeholder="Incluye el prefijo internacional si procede" maxlength="40" required></div>
+     <div class="field"><label for="interest">¿En qué podemos ayudarte?</label><select id="interest" name="entry.814792852" required><option>Quiero información general</option><option>Me interesa un programa</option><option>Quiero solicitar una demostración</option><option>Busco una solución a medida</option><option>Consulta sobre compra o instalación</option></select></div>
+     <div class="field"><label for="message">Cuéntanos un poco más</label><textarea id="message" name="entry.2094141475" maxlength="5000" placeholder="Describe brevemente lo que necesitas..." required></textarea></div>
      <button class="btn btn-primary" type="submit" id="sendContactBtn">ENVIAR CONSULTA →</button>
     </form>
+    <iframe name="googleFormTarget" title="Envío de consulta" hidden></iframe>
+    <script>(function(){const form=document.getElementById('contactForm'),frame=document.querySelector('iframe[name="googleFormTarget"]');let submitted=false;form.addEventListener('submit',function(){submitted=true;});frame.addEventListener('load',function(){if(submitted)window.location.href='gracias.html';});})();</script>
    </div>
    </div>
   </div>
